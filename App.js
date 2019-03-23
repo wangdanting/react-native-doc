@@ -8,11 +8,7 @@
 
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
-// import HelloWorld from "./src/Pages/1-Hello-World";
-// import Bananas from "./src/Pages/2-Props";
-// import State3 from "./src/Pages/3-State";
-// import Style4 from "./src/Pages/4-Style";
-import HeightAndWidth from "./src/Pages/5-HeightAndWidth";
+// import HandlingTextInput from "./src/Pages/16-FetchPost";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -24,7 +20,7 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
-    return <HeightAndWidth />;
+    return <View />;
   }
 }
 
