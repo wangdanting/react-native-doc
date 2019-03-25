@@ -111,7 +111,7 @@ export default class FlatListDemo extends PureComponent {
 
   scrollToEnd = () => {
     // this.myRef.scrollToEnd();
-    this.myRef.scrollToIndex({ viewPosition: 0.1 });
+    // this.myRef.scrollToIndex({ viewPosition: 0.1 });
   };
 
   render() {
