@@ -8,7 +8,7 @@
 
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
-import Abc from "./src/Pages/3-Components/20-SegmentedControlIOS";
+import Abc from "./src/Pages/3-Components/25-Text";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
