@@ -6,43 +6,40 @@ import {
   CameraRoll,
   ScrollView
 } from "react-native";
+import ImagePicker from "react-native-image-crop-picker";
+
+//https://github.com/ivpusic/react-native-image-crop-picker
 
 class CameraRollDemo extends PureComponent {
   state = {
     photos: ""
   };
 
-  // handleButtonPress = () => {
-  //   CameraRoll.getPhotos({
-  //     first: 20,
-  //     assetType: "Photos"
-  //   })
-  //     .then(r => {
-  //       this.setState({ photos: r.edges });
-  //     })
-  //     .catch(err => {
-  //       //Error Loading Images
-  //     });
-  // };
+  handleButtonPress = () => {
+    ImagePicker.openPicker({
+      width: 300,
+      height: 400,
+      cropping: true
+    }).then(image => {
+      console.log(image);
+      this.setState({
+        photos: image.path
+      });
+    });
+  };
 
   render() {
+    const { photos } = this.state;
     return (
       <SafeAreaView>
         <Button title="Load Images" onPress={this.handleButtonPress} />
-        {/* <ScrollView>
-          {this.state.photos.map((p, i) => {
-            return (
-              <Image
-                key={i}
-                style={{
-                  width: 300,
-                  height: 100
-                }}
-                source={{ uri: p.node.image.uri }}
-              />
-            );
-          })}
-        </ScrollView> */}
+        {/* <Image
+          style={{
+            width: 300,
+            height: 400
+          }}
+          source={{ uri: photos }}
+        /> */}
       </SafeAreaView>
     );
   }

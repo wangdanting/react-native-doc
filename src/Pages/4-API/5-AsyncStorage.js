@@ -102,7 +102,7 @@ class AsyncStorageDemo extends PureComponent {
   render() {
     return (
       <SafeAreaView>
-        <Button onPress={this.setItem} title="setItem" />
+        <Button onPress={this.setItem} title="setItem11" />
         <Button onPress={this.mergeItem} title="mergeItem" />
         <Button onPress={this.getItem} title="getItem" />
         <Button onPress={this.removeItem} title="removeItem" />
