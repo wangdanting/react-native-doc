@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Platform, Text, SafeAreaView } from "react-native";
 
-import AppContainer from "./src/Pages/5-React-Navigation/10-DrawerNavigation";
+import AppContainer from "./src/Pages/5-React-Navigation/17-withNavigation";
 
 export default class App extends React.Component {
   handleNavigationChange = (prevState, newState, action) => {
